@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Device Configuration</title>
+</head>
+<body>
+    <h1>Network Device Configuration</h1>
+    <form method="POST">
+        <label for="device_type">Device Type:</label>
+        <select id="device_type" name="device_type">
+            <option value="Router">Router</option>
+            <option value="Firewall">Firewall</option>
+            <option value="Switch">Switch</option>
+        </select><br><br>
+
+        <label for="fqdn">FQDN:</label>
+        <input type="text" id="fqdn" name="fqdn" required><br><br>
+
+        <label for="config">Configuration:</label>
+        <select id="config" name="config">
+            <option value="Standalone">Standalone</option>
+            <option value="HA">HA</option>
+            <option value="Context">Context</option>
+            <option value="Stack">Stack</option>
+        </select><br><br>
+
+        <label for="is_virtual">Is Virtual:</label>
+        <input type="checkbox" id="is_virtual" name="is_virtual" value="true"><br><br>
+
+        <label for="ip_address">IP Address (optional):</label>
+        <input type="text" id="ip_address" name="ip_address"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
